@@ -111,6 +111,7 @@ def calculateHOG(img, cell_size=8, block_size=2, num_bins=9, eps=1e-6):
             block = block / norm
 
             blocks.append(block)
+            # add click
 
     descriptor = np.concatenate(blocks)
     return descriptor
